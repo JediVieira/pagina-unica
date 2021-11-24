@@ -265,13 +265,59 @@
 
     </div>
 
-
-
-
-
-
-
     <!-- Final seção portfolio -->
+
+    
+    <!-- formulario de cadastro -->
+
+    <div id="cadastro" class="mt-5 container" >
+      <h2 class="text-center mb-3 titulo"> Cadastre-se</h2>
+
+      <!-- enctype="multipart/form-data" somente se o formulário enviar arquivos -->
+      <form  id="frm-cadastro" action="" method="POST" enctype="multipart/form-data">
+        <input type="text" class="form-control mb-3" name="nome" placeholder="Nome" required>
+        <input type="email" class="form-control mb-3" name="email" placeholder="Digite um e-mail válido" required>
+        <p>idade: <span id="info-idade"></span></p>
+        <input type="range" name="idade" id="idade" min="17" max="70" class="form-range" value="12">
+
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" value="feminino" class="form-check-input" required> Feminino
+        <input type="radio" name="sexo" value="masculino" class="form-check-input" required> Masculino
+        
+        <p>Atividades de lazer</p>      
+                                          <!-- detalhe pro colchete (pra informar todas as palavras digitadas) -->
+        <br><input type="checkbox" name="lazer{}" value="Cinema" class="form-chek-input"> Cinema
+        <br><input type="checkbox" name="lazer{}" value="Cinema" class="form-chek-input"> Esportes
+        <br><input type="checkbox" name="lazer{}" value="Cinema" class="form-chek-input"> Viajar
+        <br><input type="checkbox" name="lazer{}" value="Cinema" class="form-chek-input"> Assistir séries
+        <br><input type="checkbox" name="lazer{}" value="Cinema" class="form-chek-input"> Vídeo Game
+
+        <p>Foto de perfil: (opcional)
+          <input type="file" name="foto" id="foto" class="form-control">
+        </p>
+
+        <p>Qual estado você mora?</p>
+        <select name="estado" id="estado" class=" mb-3 form-select">
+          <option>Selecione</option>
+          <option value="Acre">Acre</option>
+          <option value="Bahia">Bahia</option>
+          <option value="Ceará">Ceará</option> 
+  
+      </form>
+
+      <input type="password" name="senha" id="senha" placeholder="Digite uma senha" class="form-control">
+
+      <br>
+      <input type="submit" value="Enviar" class="btn btn-primary">
+
+
+
+    
+    
+    </div>
+
+
+    <!-- final formulário de cadastro -->
 
 
 
